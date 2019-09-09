@@ -70,3 +70,9 @@ INSERT INTO [default].turn_number (office) VALUES ('toolon-toimipiste');
 
 1. Modify `handleEvent` to push JSON-objects into Cloud Pub/Sub
 2. Make it configurable
+
+### 3. Extra (don't implement yet)
+Currently the app uses `org.apache.kafka.connect.storage.FileOffsetBackingStore` for offset storage.
+This is file based storage so it's not stateless.
+
+How big deal it is to change this to use some other cloud backed method such as database? 
